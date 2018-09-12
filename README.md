@@ -3,7 +3,7 @@ Repository of the http://blazor.space website containing Blazor experiments, art
 
 Article list
 
-Your first Blazor Apps
+*Your first Blazor Apps*
 
 Covers:
 
