@@ -5,9 +5,11 @@ Article list
 
 *Your first Blazor Apps*
 
+url:  http://blazor.space/your-first-blazor-apps
+
 Covers:
 
-  Creating an app from each the 3 default templates, standalone, hosted and server-side
+  Creating an app from each the 3 default templates, standalone, hosted and server-side including
     
   Components
   Blazor compenents 
