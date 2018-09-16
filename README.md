@@ -15,7 +15,7 @@ Covers:
 
   Creating an app from each the 3 default templates, standalone, hosted and server-side.
   
-  demo website: https://tfgblazoredwebui.azurewebsites.net
+  demo website for 1st article: https://tfgblazoredwebui.azurewebsites.net
   please note The site is on a free shared App Service. If it hasn't been visited for a while it takes about 10 seconds to start up.
   
     
