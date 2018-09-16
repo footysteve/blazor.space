@@ -1,0 +1,41 @@
+﻿<div>
+    <h2>Your First Blazor Apps</h2>
+    <p>
+        There's already a fair few Blazor examples showing how to get up and running using
+        the default Blazor templates, similar instructions are given here for your convenience
+        and having them here makes it easier for me to keep them up to date.
+    </p>
+    <p>
+        To add something extra we're going to attempt to fix a couple of small issues with the sidebar menu which will
+        give a little taster of using different aspects of Blazor including C#. We'll also create our first Blazor component,
+        <Note Content="a Note component used to emphasize bits of text" DisplayStyle="text-info d-inline-flex"/>.
+    </p>
+    <h3>Prerequisites</h3>
+    <div>
+        <ul>
+            <li>
+                Install <NavLink href="https://go.microsoft.com/fwlink/?linkid=873092">.NET Core SDK</NavLink>, version 2.1.300 or later.
+            </li>
+            <li>
+                Install <NavLink href="https://visualstudio.microsoft.com/vs/">VS 2017</NavLink>, version 15.7 or later with Web Development features selected.
+            </li>
+            <li>
+                Install Blazor Language Services <NavLink href="https://marketplace.visualstudio.com/items?itemName=aspnet.blazor">extension</NavLink>.
+            </li>
+        </ul>
+    </div>
+
+    <div class="">
+        <p>Ok, you should have everything you need to start developing with Blazor.</p>
+        <p>In Visual Studio create a new ASP.Net Core Web Application and choose the <b>Blazor</b> template. There are 3 default Blazor templates available, we'll cover all 3 in this article.</p>
+        <img src="images/your-first-blazor-apps/blazor-project-templates.jpg" alt="Choose your Blazor template" />
+        <Note Content="Choosing a Blazor project template" DisplayStyle="card-footer"/>.
+        <p>Now run the project and there you have it, you first Blazor app!</p>
+
+    </div>
+</div>
+
+@functions
+{
+    [Parameter] int Id { get; set; }
+}

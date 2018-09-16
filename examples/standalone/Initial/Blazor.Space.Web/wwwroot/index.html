@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Blazor.Space.Web</title>
+    <base href="/" />
+    <style>
+        .loader {
+            position: relative;
+            max-width: 15rem;
+            width: 15rem;
+            height: auto;
+            stroke-linecap: round;
+            padding: 20px;
+            margin: 12px auto;
+            top: 120px;        
+        }
+
+        circle {
+            fill: none;
+            stroke-width: 3.5;
+            -webkit-animation-name: preloader;
+            animation-name: preloader;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            -webkit-transform-origin: 170px 170px;
+            transform-origin: 170px 170px;
+            will-change: transform;
+        }
+
+            circle:nth-of-type(1) {
+                stroke-dasharray: 550px;
+            }
+
+            circle:nth-of-type(2) {
+                stroke-dasharray: 500px;
+            }
+
+            circle:nth-of-type(3) {
+                stroke-dasharray: 450px;
+            }
+
+            circle:nth-of-type(4) {
+                stroke-dasharray: 300px;
+            }
+
+            circle:nth-of-type(1) {
+                -webkit-animation-delay: -0.15s;
+                animation-delay: -0.15s;
+            }
+
+            circle:nth-of-type(2) {
+                -webkit-animation-delay: -0.3s;
+                animation-delay: -0.3s;
+            }
+
+            circle:nth-of-type(3) {
+                -webkit-animation-delay: -0.45s;
+                animation-delay: -0.45s;
+            }
+
+            circle:nth-of-type(4) {
+                -webkit-animation-delay: -0.6s;
+                animation-delay: -0.6s;
+            }
+
+        @-webkit-keyframes preloader {
+            50% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes preloader {
+            50% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <app>
+        <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+            <circle cx="170" cy="170" r="160" stroke="#E2007C" />
+            <circle cx="170" cy="170" r="135" stroke="#404041" />
+            <circle cx="170" cy="170" r="110" stroke="#E2007C" />
+            <circle cx="170" cy="170" r="85" stroke="#404041" />
+        </svg>        
+    </app>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+</html>
